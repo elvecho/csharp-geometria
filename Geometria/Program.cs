@@ -15,8 +15,8 @@ int area = NuovoRettangolo.CalcolaArea(baseR, altezzaR);
 Console.WriteLine(area);
 int perimetro = NuovoRettangolo.CalcolaPerimetro(baseR, altezzaR);
 Console.WriteLine(perimetro);
-NuovoRettangolo.StampaRettangolo();
-
+NuovoRettangolo.StampaRettangolo(perimetro, area);
+NuovoRettangolo.disegna();
 
 for(int i = 0; i < 4; i++)
 {
@@ -29,7 +29,7 @@ for(int i = 0; i < 4; i++)
 int area2 = rettangolo2.CalcolaArea(baseR2,altezzaR2);
     
     int perimetro2 = rettangolo2.CalcolaPerimetro(baseR2, altezzaR2);
-    rettangolo2.StampaRettangolo();
+    rettangolo2.StampaRettangolo(perimetro, area);
 
 
 }

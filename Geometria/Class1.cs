@@ -10,7 +10,7 @@ namespace lamiaclasse
     {
         public int baseRettangolo;
         public int altezzaRettangolo;
-        
+       
 
 
 
@@ -34,19 +34,52 @@ namespace lamiaclasse
             
             return Perimetro;
         }
-        public void StampaRettangolo()
+        public void StampaRettangolo(int perimetro, int area)
         {
+            int perimetroRettangolo = perimetro;
+            int areaRettangolo = area;
 
-            
-            
-                Console.WriteLine("--Rettangolo--");
+
+
+            Console.WriteLine("--Rettangolo--");
 
                 Console.WriteLine("base: " + baseRettangolo + "cm");
                 Console.WriteLine("altezza: " + altezzaRettangolo + "cm");
-                Console.WriteLine("perimetro: " + CalcolaPerimetro);
-                Console.WriteLine("perimetro: " + CalcolaArea);
+                Console.WriteLine("perimetro: " + perimetro);
+                Console.WriteLine("area: " + area);
             
             
         }
+        public void disegna()
+        {
+            Console.Write("|");
+            for (int i = 0; i < baseRettangolo; i++)
+            {
+                Console.Write("--");
+               
+            }
+
+
+            for (int i = 0; i < altezzaRettangolo; i++)
+            {
+
+                Console.WriteLine("|");
+            }
+
+            for (int i2 = 0; i2 < baseRettangolo; i2++)
+            {
+                Console.Write("  ");
+
+            }
+            for (int i = 0; i < altezzaRettangolo -1; i++)
+            {
+
+                Console.WriteLine("|");
+                break;
+            }
+            
+        }
+        
+        
     }
 }
