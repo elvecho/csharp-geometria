@@ -18,7 +18,11 @@ Console.WriteLine(perimetro);
 NuovoRettangolo.StampaRettangolo(perimetro, area);
 NuovoRettangolo.disegna();
 
-for(int i = 0; i < 4; i++)
+
+Console.WriteLine("quanti rettangoli vuoi inserire?");
+int numeroRettangoli = int.Parse(Console.ReadLine());
+
+for(int i = 0; i < numeroRettangoli; i++)
 {
     Console.WriteLine("inserisci la base del rettangolo: ");
     int baseR2 = int.Parse(Console.ReadLine());

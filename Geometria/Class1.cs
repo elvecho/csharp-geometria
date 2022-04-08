@@ -36,17 +36,14 @@ namespace lamiaclasse
         }
         public void StampaRettangolo(int perimetro, int area)
         {
-            int perimetroRettangolo = perimetro;
-            int areaRettangolo = area;
-
 
 
             Console.WriteLine("--Rettangolo--");
 
                 Console.WriteLine("base: " + baseRettangolo + "cm");
                 Console.WriteLine("altezza: " + altezzaRettangolo + "cm");
-                Console.WriteLine("perimetro: " + perimetro);
-                Console.WriteLine("area: " + area);
+                Console.WriteLine("perimetro: " + perimetro + "cm");
+                Console.WriteLine("area: " + area + "cm");
             
             
         }
